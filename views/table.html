@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <style type="text/css">
+    body {
+      background-color: black;
+      /* background: #40E0D0;   */
+      /* background: -webkit-linear-gradient(to top, #FF0080, #FF8C00, #40E0D0);   */
+      /* background: linear-gradient(to bottom, #FF0080, #FF8C00, #40E0D0);  */
+
+
+      /* background-image: no-repeat; */
+      /* background-size: cover; */
+
+
+
+    }
+    
+
+    body::before {
+
+      background: url('../static/images/img5.png') no-repeat center center/cover;
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    table {
+      width: 400px;
+      /*border-spacing:*/
+    }
+
+    caption {
+      text-align: right;
+      color: white;
+      
+
+    }
+
+    th {
+      text-align: center;
+      color: black;
+    }
+
+    table,
+    th,
+    td {
+      border: 5px solid #e8e8f0;
+      border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    tr:nth-child(even) {
+      background-color: white;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #b4b4b4;
+    }
+
+    html {
+      content: close-quote;
+    }
+
+    /* CoronaVirus Animation
+Default speed is: 10s
+MoveUpDown is a keyFrames that define the position*/
+    .animatediv {
+      animation: MoveUpDown 10s linear infinite;
+      position: fixed;
+      right: 30px;
+    }
+
+    /* position of corona animation */
+    @keyframes MoveUpDown {
+
+      0%,
+      100% {
+        top: 150px;
+      }
+
+      50% {
+        top: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>
+      <h1>COVID-19 UPDATES</h1>
+    </caption>
+    <thead>
+      <tr>
+        <th>S.NO</th>
+        <th>ALL STATE/UT STATS</th>
+        <th>ACTIVE </th>
+        <th>RECORVED</th>
+        <th>DEATH</th>
+        <th>CONFIRMED</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>MAHARASTHRA</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>ANDRA PRADESH</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>KARNATAKA</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>TAMIL NADU</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>UTTAR PRADESH</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>KERALA</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>4556</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>NCT DELHI</td>
+        <td>4556</td>
+        <td>4556</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>WEST BENGAL</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <!-- <td>5496</td> -->
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>ODISDHA</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>TELANGANA</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>BIHAR</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>ASSAM</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>RAJASTHAN</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>CHHATTISGARH</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+        <td>5496</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>MADHYA PRADESH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>GUJRAT</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>HARYANA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>PUNJAB</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>JHARKHAND</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>JAMMU AND KASHMIR</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>UTTARAKHAND</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>GOA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>PUDUCHERRY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>TRIPURA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>HIMACHAL PRADESH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>MANIPUR</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>ARUNACHAL PRADESH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>CHANDIGARH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>MEGHALAYA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>NAGALAND</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>LADAKH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>ANDAMAN AND NICOBAR</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>SIKKIM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>DADA AND NAGAR HAVELI AND DAMAN AND DIU</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>MIZORAM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>LAKSHADWEEP</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+  </table>
+  <div class="animatediv">
+    <img src="https://atheistiran.com/wp-content/uploads/2020/03/corona-virus.png">
+  </div>
+</body>
+
+</html>

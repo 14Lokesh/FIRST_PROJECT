@@ -1,0 +1,158 @@
+body{
+  background-color: black;
+ /* background: #ff00cc;   */
+/* background: -webkit-linear-gradient(to top, #333399, #ff00cc);   */
+/* background: linear-gradient(to top, #333399, #ff00cc);  */
+
+background-image : no-repeat;
+    background-size:contain;
+  font-family:Tahoma;
+  font-size:15px;
+
+}
+body::before{
+    
+  background: url('../static/images/img3.png') no-repeat center center/cover;
+  content: "";
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Headers Style */
+h1{
+  text-align:center;
+  font-size:5em;
+  color:#fff;
+  text-shadow: 0px 1px 2px #000;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+h2{
+  text-align:left;
+  font-size:3em;
+  color:yellowgreen;
+  margin-left:120px;
+  margin-bottom:-5px;
+  font-family: 'Baloo Bhai 2', cursive;
+  
+}
+
+h3{
+  text-align:left;
+  font-size:2em;
+  color:#fff;
+  background:black;
+  padding-left:120px;
+  
+}
+
+/* Image top of the menu */
+.TopImage{
+  position:relative;
+  left:110px;
+  z-index:2;
+  width:300px;
+  margin-bottom:-2px;
+}
+
+/* Text boxes style */
+.messagebox{
+  width:80%;
+  height:200px;
+  background-color:white;
+  position:relative;
+  left:120px;
+  line-height: 1.5em;
+  padding:25px;
+  margin-bottom: 50px;
+  border-left:5px solid #007E30;
+}
+
+/* Text boxes style in hover */
+.messagebox:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Default shadow style */
+.shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* CoronaVirus Animation
+Default speed is: 10s
+MoveUpDown is a keyFrames that define the position*/
+.animatediv{
+  animation: MoveUpDown 10s linear infinite;
+  position: absolute;
+  right: 300px;
+  }
+/* position of corona animation */
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 150px;
+  }
+  50% {
+    top: 250px;
+  }
+}
+
+/*Main Menu Style*/
+    ul.menu {
+        position:absolute;
+    left:120px;
+        background:#fff;
+        width:300px;
+    z-index:3;
+        margin:0px;
+        padding:0px;
+        list-style: none;
+        overflow:hidden;
+    }
+
+.menu li a {
+        width:300px;
+        padding-left:15px;
+        height:40px;
+        line-height:40px;
+        display:block;
+        overflow:hidden;
+        position:relative;
+        text-decoration:none;
+        font-size:15px;
+        color:#686868;          
+    }
+
+    .menu li a:hover {
+        background:#efefef;
+    border-left:5px solid #007E30;
+    }
+
+/*Table Container Style*/
+#TblCon{
+  background:#efefef;
+}
+
+/*Table Style*/
+.Tbl{
+width:70%;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+font-size:10px;  
+}
+
+/* Final Tite (Wash Your Hands) */
+#WashHandsTxt{
+   color:skyblue;
+   font-size:8em;
+   text-align:center;
+   font-family: 'Baloo Bhai 2', cursive;
+}
+
+/*.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.*/

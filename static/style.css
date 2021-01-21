@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+       /* background: #f12711;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #f5af19, #f12711);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #f5af19, #f12711); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*background: url(https://vivax-care.com/wp-content/uploads/2018/06/rotating-dna-formula-background-footage-008912409_prevstill.jpeg); 
+   
+   background: url(https://img.freepik.com/free-photo/3d-render-medical-background-with-dna-strands-connecting-dots_1048-6022.jpg?size=626&ext=jpg);
+  */
+}
+body{
+    background-color: black;
+}
+
+body::before{
+    
+    background: url('../static/images/img4.png') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    /* background-color: #fff; */
+    display: flex;
+}
+
+#btn{
+    background-image: url("images/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 100%;
+    width: 60px;
+    background-color: #f98f39;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+    padding-left: 15px;
+}
+
+.navbar ul li{
+    list-style: none;
+    line-height: 60px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding:2px 20px;
+    color: white;
+    /* font-family: 'Modak', cursive; */
+    font-family: 'Goldman', cursive;
+    font-size: 21px;
+}
+
+.navbar ul li a:hover{
+    color: white;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+#btn:hover{
+    opacity: 0.6;
+}
+
+.sidebar{
+    width: 50px;
+    padding: 0 5px;
+    height: calc(100vh - 60px);
+    background-color:#1b1b1b;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul{
+    padding-top: 20px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+}
+
+.sidebar ul li span , .sidebar ul li a{
+    padding:0 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Modak', cursive;
+    font-size: 18px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.sidebar ul li a:hover{
+    background-color: #222;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+
+.main img{
+    width: 350px;
+    height: 300px;
+    padding-top: 20px
+}
+
+.main  button{
+    position: absolute;
+    top:380px;
+    right: 100px;
+    margin-top: 130px;
+    height: 44px;
+    border: 2px solid black;
+    width: 180px;
+    cursor: pointer;
+    padding: 0px 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+    font-family:'Roboto Condensed', sans-serif ;
+    outline: none;
+}
+
+.main button:hover{
+    opacity: 0.8;
+    color: yellowgreen;
+}
+
+.main h1{
+    position: relative;
+    bottom:  400px;
+    left: 5px;
+    font-family: 'Modak', cursive;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+    animation: covid 1s infinite ease-in-out;
+    padding-left: 100px; 
+}
+
+.formsec{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   left: 337px;
+   top: 85px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.input{
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-family: 'Modak', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid;
+    background-color:black;
+    color: rgb(123, 115, 115);
+}
+.formsec h1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    color:white; 
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding: 15px;
+
+}
+h2{
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 15px;
+}
+
+.btn{
+    position: absolute;
+    left: 5px;
+    top: 520px;
+    /* background-color: green; */
+    width: 44%;
+    padding: 10px 5px;
+    font-family: 'Modak', cursive;
+    border-radius: 10px;
+    border: 2px solid;
+    background:grey;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#reset{
+    left: 383px;
+}
+
+.btn:hover{
+    color: black;
+    background:white;
+    font-weight: bolder;
+}
+
+@keyframes covid{
+    0%{
+        color:red;
+    }
+    50%{
+        color: orange;
+    }
+    75%{
+        color: black;
+    }
+    100%{
+        color: skyblue;
+    }
+}
+
+
+
+.co::after {
+    content: "";
+    clear: both;
+    display: table;
+
+
+}
+.co{
+    margin:10px 0px;
+}
+
+/*Table Container Style*/
+#TblCon{
+  background:#efefef;
+}
+
+/*Table Style*/
+ .Tbl{ 
+    width:60%;
+  margin-left: 70px; 
+  margin-right: auto;
+text-align:center;
+ font-size:10px; 
+ padding-top:120px;
+     }
+
+
+.right{
+    width:60%;
+    float: left;
+    height: 400px;
+    margin-left: 5%;
+    
+}

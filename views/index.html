@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+</head>
+<style>
+  .Container {
+    /* color: brown; */
+    color: white;
+    background-color: #f98f39;
+    background-color:grey;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    margin-top: 1px;
+    font-size: 19px;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 6px;
+    /* font-style: italic; */
+ }
+
+ footer{
+   
+    background: black;
+    color: white;
+    padding: 20px 40px;
+    padding-top: 10px;
+    position: absolute;
+    top: 440px;
+    margin-top: 264px;
+}
+.center{
+    text-align: center;
+    width: 1450px;
+    height: 10px;
+    padding-top: 10px;
+    
+}
+</style>
+
+<body>
+  <div class="Container">
+    <!-- time  -->
+    <span id="time"></span>
+  </div>
+  <script>
+
+    function displayTime() {
+      time = new Date();
+      console.log(time);
+      document.getElementById('time').innerHTML = time;
+    }
+  
+    setInterval(displayTime, 1000);
+  
+  </script>
+
+  <nav class="navbar">
+    <!-- <div id="btn" onclick="openNav()"></div> -->
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/blog">KNOW MORE</a></li>
+      <li><a href="/table">COVID-19 CASES</a></li>
+      <li><a href="/form">FILL THE FORM</a></li>
+      <li><a href="/123"> TO-DO-THINGS</a></li>
+
+    </ul>
+  </nav>
+  <div class="co">
+    <section class="main">
+      <h1>STAY HOME <br> STAY SAFE</h1>
+      <img src="../static/images/img.png" alt="who cases" id="image">
+      <button onclick="change()">Click to see more</button>
+    </section>
+    <aside class="right">
+
+      <p>
+      <h1>Cases have been reported from:</h1>
+
+      <h1>Africa:</h1>
+      <h2>Total Cases reported 1,999,563 . The five countries reporting most cases are South Africa
+        (754,256), Morocco (301,604), Egypt (111,284), Ethiopia (103,395) and Tunisia (81,723).</h2>
+
+
+      <h1>Asia:</h1>
+      <h2>Total Cases reported 15,025,564 cases . The five countries reporting most cases are India
+        (8,912,907), Iran (788,473), Iraq (524,503), Indonesia (474,455) and Bangladesh (436 684).</h2>
+
+      <h1>America:</h1>
+      <h2> Total Cases reported 23,918,764 cases . The five countries reporting most cases are United
+        States (11,359, 802), Brazil (5,911,758), Argentina (1,329,005), Colombia (1,211,128) and Mexico (1,011,153).
+      </h2>
+
+      <h1>Europe:</h1>
+      <h2>Total Cases reported 14,750,809 cases . The five countries reporting most cases are France
+        (2,036,755), Russia (1,991,998), Spain (1,510,023), United Kingdom (1,410,732) and Italy (1,238,072).</h2>
+
+      <h1>Oceania:</h1>
+      <h2> Total Cases reported 48,555 . The five countries reporting most cases are Australia (27,756),
+        French Polynesia (12,121), Guam (6,234), New Zealand (1,652) and Papua New Guinea (602).</h2>
+
+      <!-- <h1>Other:</h1> Total Cases reported 696 have been reported from an international conveyance in Japan.</h2> -->
+      </p>
+    </aside>
+
+  </div>
+  <table class="Tbl">
+    <tr>`
+      <th>WHO</th>
+      <th>CORONAVIRUS OUTBREAK</th>
+
+    </tr>
+    <tr>
+      <td>
+        <!-- <a href="https://www.who.int"> -->
+        <!-- <img src="https://devpolicy.org/wp-content/uploads/2015/02/image13.png" alt="world health organization" -->
+        style="width:100px">
+        </a>
+      </td>
+      <td>
+        <!-- <a href="https://www.worldometers.info/coronavirus/"> -->
+        <!-- <img src="https://www.worldometers.info/img/worldometers-logo.gif"> -->
+        </a>
+      </td>
+
+    </tr>
+  </table>
+
+  <script src="../static/my.js"></script>
+  <footer>
+    <div class="center">
+        Copyright &copy; www.coronaupdater.com . All rights reserved!
+    </div>
+</footer>
+</body>
+
+</html>
